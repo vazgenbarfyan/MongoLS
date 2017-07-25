@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  	<title>Mango :D Tests</title>
+    <meta charset="UTF-8">
+  </head>
+  <body>
+    <input id="id" size="35" height="100px"><br>
+  	<button id = "post">Add</button>
+    <input type="text" id="query"><br>
+  	<button id = "find">FIND</button>
+  	<div id = "div1" > </div>
+    <script type="text/javascript">
+  		$("#post").on('click',function(){
+		    $.ajax({
+		    	url: "/addUser",
+		    	type: "POST",
+		    	data: $("#id").val(),
+		    	contentType: 'application/json',
+		    	success: function(result){
+		        	alert("Successfully added");
+		    	},
+		    	error: function( error ) {
+        	     console.log(error);		
+          }
+		    })
+		  });
+
+  		$("#find").on('click',function(){
+		    $.ajax({
+		    	url: "/findUsers",
+		    	type: "POST",
+		    	data: $('#query').val(),
+		    	success: function(result){
+            console.log(JSON.parse(result));
+		        	$("#div1").html(result);
+		    	},
+		    	error: function( error ) {
+        	     console.log(error);
+          }
+		    })
+		  });
+  	</script>
+  </body>
+</html> 

@@ -1,23 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	<title>Mocha Tests</title>
+  <head>
+  	<title>Mocha Tests</title>
     <link rel="stylesheet" href="node_modules/mocha/mocha.css">
-    <title>Title</title>
-</head>
-<body>
-	<div id="mocha"></div>
-    <script src="node_modules/mocha/mocha.js"></script>
-    <script src="node_modules/chai/chai.js"></script>
-  	<script src ="mongo.js"></script>
     <meta charset="UTF-8">
-  
-    <!-- load code you want to test here -->
-    <script src="test/test.js"></script>
-    <!-- load your test files here -->
-
-  	<script>
-      mocha.run();
-    </script>
-</body>
-</html>
+  </head>
+  <body>
+  	<div id="mocha"></div>
+    <script src="node_modules/mocha/mocha.js"></script>
+    <script data-main="lib/test.js" src="node_modules/requirejs/require.js"></script>
+  </body>
+</html> 
