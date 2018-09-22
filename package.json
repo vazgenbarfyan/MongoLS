@@ -5,13 +5,14 @@
   "main": "mongo.js",
   "dependencies": {
     "mocha": "^3.4.2",
-    "nodemon": "^1.11.0",
+    "nodemon": "^1.18.4",
+    "npm": "^6.4.1",
     "requirejs": "^2.3.3"
   },
   "devDependencies": {
-    "babel-cli": "^6.24.1",
+    "babel-cli": "^6.26.0",
     "babel-plugin-transform-es2015-modules-amd": "^6.24.1",
-    "babel-preset-env": "^1.6.0",
+    "babel-preset-env": "^1.7.0",
     "chai": "^4.1.0",
     "inspect-process": "^0.5.0"
   },
