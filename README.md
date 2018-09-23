@@ -9,12 +9,12 @@ MongoDB API on top of Local Storage.
 ### Methods
 
 - setItem(Item)
-- Add item to the storage. The passed argument has to be and object
+   - Add item to the storage. The passed argument has to be and object
 - getItem(Id)
-- Retrieve the item with specified ID. The passed argument has to be an integer or string.
+  - Retrieve the item with specified ID. The passed argument has to be an integer or string.
 - removeItem(Id)
-- Remove the item from the database. The passed argument has to be an integer or string.
+  - Remove the item from the database. The passed argument has to be an integer or string.
 - find(query)
-- Check to see if the requested query has any matches. Return the array of found items from the db.
+  - Check to see if the requested query has any matches. Return the array of found items from the db.
 - into(range, number)
-- Check to see if the specified number is within the range. Range is an array of length two containing start and end of the range. Second attribute is the integer to be checked.
+  - Check to see if the specified number is within the range. Range is an array of length two containing start and end of the range. Second attribute is the integer to be checked.
