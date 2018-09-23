@@ -1,6 +1,6 @@
 # Mongo Local
 
-MongoDB working locally with the help of Local Storage. 
+MongoDB API on top of Local Storage. 
 
 ![MongoDB Logo](./markdownphotos/mongolocal.png)
 
